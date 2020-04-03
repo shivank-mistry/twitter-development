@@ -1,11 +1,5 @@
 # install.packages("rtweet")
-# install.packages("tidytext")
-
 library(rtweet)
-library(tidytext)
-library(ggplot2)
-library(dplyr)
-
 # sourced key files from upper file path, avoided publishing keys
 source("../twitterkeys.R")
 
@@ -15,7 +9,7 @@ twitter_token <- create_token(
   consumer_key = api_key,
   consumer_secret = api_key_secret,
   access_token = access_token,
-  access_secret = access_token_Secret)
+  access_secret = access_token_secret)
 
-testing <- search_tweets(q = "#rstats", n = 50)
+ <- search_tweets(q = "#rstats", n = 50)
 
